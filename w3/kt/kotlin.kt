@@ -5,4 +5,5 @@ fun main() {
     println("Hello, World!")
     println(3+3+3)
     println("Name: " + name + " Year: " + year)
+    println("Next Year: " + NextYear)
 }
