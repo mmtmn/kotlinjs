@@ -145,5 +145,66 @@ fun main() {
     var shorter = shorterSintaxReturn(1,2)
     println(shorter)
 
+    class dogs {
+        var name = ""
+        var age = 0
+    }
+    var dog1 = dogs()
+    dog1.name = "doggo"
+    dog1.age = 10
+    println("dog1 name: " + dog1.name + " dog1 age: " + dog1.age )
+    var dog2= dogs()
+    dog2.name = "doogoo2"
+    println(dog2.name)
+
+    class doggos (var name: String, var age: Int)
+    val doggo1 = doggos("doggo1", 5)
+    println(doggo1.name)
+    println(doggo1.age)
+
+    class abc {
+        var num1 = 0
+        var string1 = ""
+        fun stats() {
+            println("num1: "+num1+" string1: " + num2)
+        }
+    }
+
+    val abcobject = abc()
+    abcobject.num1 = 1
+    abcobject.string1 = "1234567910"
+    abcobject.stats()
+
+    class paramsclass(var age: Int, var name: String) {
+        fun stats() {
+            println(age)
+            print(name)
+        }
+
+        fun nextAge() {
+            println(age + 1)
+        }
+
+        fun initial() {
+            println(name[0])
+        }
+    }
+
+    var person1 = paramsclass(1000, "john")
+    person1.stats()
+    person1.nextAge()
+    person1.initial()
+
+    open class parentclass() {
+        var a = 9001
+    }
+    class childclass: parentclass() {
+        fun printvarriablefromparentclass() {
+            println(a)
+        }
+        
+    }
+    var parentchildobj = childclass()
+    parentchildobj.printvarriablefromparentclass()
 
 }
